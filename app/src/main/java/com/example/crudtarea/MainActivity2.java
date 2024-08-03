@@ -16,6 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     Button btnRegresar;
     Button btnInsert;
+    Button btnListar;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         btnRegresar=(Button)findViewById(R.id.btnRegresar);
         btnInsert=(Button)findViewById(R.id.btnInsert);
+        btnListar=(Button)findViewById(R.id.btnListar);
 
         btnRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity2.this, RegistroUsuariosActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity2.this, ConsultarLista.class);
                 startActivity(i);
             }
         });

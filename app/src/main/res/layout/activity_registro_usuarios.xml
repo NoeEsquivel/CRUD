@@ -22,28 +22,28 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/campoId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            tools:text="Id" />
+            android:hint="Id"
+            android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/campoNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Nombre" />
+            android:hint="Nombre"
+            android:inputType="text|textPersonName" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/campoTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="phone"
-            android:text="Telefono" />
+            android:hint="Telefono"
+            android:inputType="phone" />
 
         <LinearLayout
             android:layout_width="match_parent"
